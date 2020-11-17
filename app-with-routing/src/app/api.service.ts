@@ -12,6 +12,8 @@ export class ApiService {
 
   public getProducts(): Observable<IProduct[]> {
     const url = 'http://localhost:8080/products'; // ToDo: move to config file
+    // const url = 'http://localhost:50063/products'; // ToDo: move to config file
+    
     return this.http.get<IProduct[]>(url);
   }
 
